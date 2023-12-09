@@ -1,5 +1,5 @@
 const searchBtn = document.querySelector('#search-btn');
-const inputBtn = document.querySelector('#city-name');
+const inputBtn = document.querySelector('#enter-city');
 
 async function apiData(cityName) {
   const promise =
