@@ -16,7 +16,6 @@ async function apiData(cityName) {
 searchBtn.addEventListener('click', async () => {
   const value = inputBtn.value;
   const result = await apiData(value);
-  console.log(result);
   city.innerText = `${result.location.country}, ${result.location.name}`;
   cityTime.innerText = `${result.location.localtime}`;
   cityTem1.innerHTML = `${result.current.temp_c} &#176;c`;
