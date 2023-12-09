@@ -42,6 +42,7 @@ span {
   padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 3px 4px 13px -3px #8d8d8d;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
