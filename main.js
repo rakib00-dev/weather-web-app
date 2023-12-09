@@ -3,7 +3,8 @@ const inputBtn = document.querySelector('#enter-city');
 
 const city = document.querySelector('#city-name');
 const cityTime = document.querySelector('#city-time');
-const cityTem = document.querySelector('#city-temp');
+const cityTem1 = document.querySelector('#city-temp-c');
+const cityTem2 = document.querySelector('#city-temp-f');
 
 async function apiData(cityName) {
   const promise =
@@ -17,4 +18,7 @@ searchBtn.addEventListener('click', async () => {
   const result = await apiData(value);
   console.log(result);
   city.innerText = `${result.location.country}, ${result.location.name}`;
+  cityTime.innerText = `${result.location.localtime}`;
+  cityTem1.innerHTML = `${result.current.temp_c} &#176;c`;
+  cityTem2.innerHTML = `${result.current.temp_f} &#176;f`;
 });
