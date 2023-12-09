@@ -16,4 +16,5 @@ searchBtn.addEventListener('click', async () => {
   const value = inputBtn.value;
   const result = await apiData(value);
   console.log(result);
+  city.innerText = `${result.location.country}, ${result.location.name}`;
 });
