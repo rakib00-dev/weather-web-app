@@ -18,6 +18,6 @@ searchBtn.addEventListener('click', async () => {
   const result = await apiData(value);
   city.innerText = `${result.location.country}, ${result.location.name}`;
   cityTime.innerText = `${result.location.localtime}`;
-  cityTem1.innerHTML = `${result.current.temp_c} &#176;c`;
+  cityTem1.innerHTML = `${result.current.temp_c} &#176;C`;
   cityTem2.innerHTML = `${result.current.temp_f} &#176;f`;
 });
