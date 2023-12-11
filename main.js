@@ -19,5 +19,5 @@ searchBtn.addEventListener('click', async () => {
   city.innerText = `${result.location.country}, ${result.location.name}`;
   cityTime.innerText = `${result.location.localtime}`;
   cityTem1.innerHTML = `${result.current.temp_c} &#176;C`;
-  cityTem2.innerHTML = `${result.current.temp_f} &#176;f`;
+  cityTem2.innerHTML = `${result.current.temp_f} &#176;F`;
 });
