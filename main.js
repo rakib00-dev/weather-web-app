@@ -6,6 +6,8 @@ const cityTime = document.querySelector('#city-time');
 const cityTem1 = document.querySelector('#city-temp-c');
 const cityTem2 = document.querySelector('#city-temp-f');
 
+const weatherAria = document.getElementById('weather-work');
+
 async function apiData(cityName) {
   const promise =
     await fetch(`http://api.weatherapi.com/v1/current.json?key=6c2dfad1edbf4bc78de145717230912&q=${cityName}&aqi=yes
@@ -21,3 +23,8 @@ searchBtn.addEventListener('click', async () => {
   cityTem1.innerHTML = `${result.current.temp_c} &#176;C`;
   cityTem2.innerHTML = `${result.current.temp_f} &#176;F`;
 });
+
+function weatherA() {
+  // weatherAria.style.display = 'block';
+  weatherAria.style.visibility = 'visible';
+}

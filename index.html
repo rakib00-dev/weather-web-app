@@ -11,21 +11,26 @@
     <title>weather app</title>
   </head>
   <body>
-    <div class="input">
-      <input id="enter-city" type="text" placeholder="Enter City Name" />
-      <button id="search-btn">Search</button>
-    </div>
+    <div id="outter">
+      <div class="input">
+        <input id="enter-city" type="text" placeholder="Enter City Name" />
+        <button id="search-btn" onclick="weatherA()">Search</button>
+      </div>
 
-    <div>
-      <h3>country/city: <span id="city-name"> </span></h3>
-      <h4>
-        localtime:
-        <span id="city-time"></span>
-      </h4>
-      <p>Temperature in celsius: <span id="city-temp-c"></span></p>
-      <p>Temperature in fahrenheit: <span id="city-temp-f"></span></p>
-    </div>
+      <!-- <div id="weather-bg"></div> -->
+      <div id="weather-work">
+        <span id="city-name"> </span>
 
+        <!-- <h3>country/city: 
+        </h3> -->
+        <h4>
+          localtime:
+          <span id="city-time"></span>
+        </h4>
+        <p>Temperature in celsius: <span id="city-temp-c"></span></p>
+        <p>Temperature in fahrenheit: <span id="city-temp-f"></span></p>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

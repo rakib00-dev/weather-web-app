@@ -14,12 +14,16 @@ h3,
 h4,
 p {
   font-weight: 400;
-  color: gray;
+  color: rgb(239, 228, 228);
 }
 
 span {
   font-weight: bold;
-  color: black;
+  color: white;
+}
+
+#outter {
+  display: grid;
 }
 
 #enter-city {
@@ -29,6 +33,13 @@ span {
   background: #af54ef;
   color: white;
   box-shadow: 3px 4px 13px -3px #8d8d8d;
+}
+
+#city-name {
+  justify-content: center;
+  display: flex;
+  top: -7px;
+  position: relative;
 }
 
 ::placeholder {
@@ -48,6 +59,28 @@ span {
 
 #search-btn:hover {
   background: #7905cb;
+}
+
+#weather-work {
+  /* display: none; */
+  /* visibility: hidden; */
+  background-color: #af54ef;
+
+  padding: 20px;
+  border-radius: 13px;
+}
+
+/* #search-btn:active #weather-work {
+  display: block;
+} */
+
+#weater-bg {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background: #6322cc7c;
+  filter: blur(6px);
+  -webkit-filter: blur(8px);
 }
 
 @media (max-width: 768px) {
