@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f3f3f9;
 }
 
 .input {
