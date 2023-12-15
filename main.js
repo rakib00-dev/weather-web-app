@@ -25,6 +25,6 @@ searchBtn.addEventListener('click', async () => {
 });
 
 function weatherA() {
-  // weatherAria.style.display = 'block';
-  weatherAria.style.visibility = 'visible';
+  weatherAria.style.display = 'block';
+  // weatherAria.style.visibility = 'visible';
 }
