@@ -8,6 +8,9 @@ body {
 
 .input {
   padding: 20px;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
 }
 
 h3,
@@ -65,9 +68,9 @@ span {
   /* display: none; */
   /* visibility: hidden; */
   background-color: #af54ef;
-
   padding: 20px;
   border-radius: 13px;
+  margin: 20px;
 }
 
 /* #search-btn:active #weather-work {
