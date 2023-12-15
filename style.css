@@ -71,6 +71,7 @@ span {
   padding: 20px;
   border-radius: 13px;
   margin: 20px;
+  box-shadow: 5px 6px 35px 6px #b1b1b1ab;
 }
 
 /* #search-btn:active #weather-work {
